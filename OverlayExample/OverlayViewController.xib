@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OverlayViewController" customModule="OverlayExample" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="LzK-Fz-9Fl" id="gJJ-hf-MeB"/>
+                <outlet property="tableView" destination="Hbo-iv-nLT" id="EnF-zS-5rb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzK-Fz-9Fl">
+                    <rect key="frame" x="0.0" y="264.5" width="414" height="597.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fM-Ar-bdT">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipe" translatesAutoresizingMaskIntoConstraints="NO" id="6f4-qA-Cev">
+                                    <rect key="frame" x="182" y="10" width="50" height="10"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="irS-4T-ecD"/>
+                                        <constraint firstAttribute="width" constant="50" id="vhL-6d-VTz"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Syarat dan Ketentuan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FP7-lr-M3V">
+                                    <rect key="frame" x="125" y="30" width="164" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="FP7-lr-M3V" firstAttribute="top" secondItem="6f4-qA-Cev" secondAttribute="bottom" constant="10" id="Ahd-fU-nbE"/>
+                                <constraint firstItem="6f4-qA-Cev" firstAttribute="centerX" secondItem="1fM-Ar-bdT" secondAttribute="centerX" id="bOY-2Y-csl"/>
+                                <constraint firstItem="FP7-lr-M3V" firstAttribute="centerX" secondItem="6f4-qA-Cev" secondAttribute="centerX" id="nKG-IJ-wLq"/>
+                                <constraint firstAttribute="height" constant="70" id="ohf-3r-puY"/>
+                                <constraint firstItem="6f4-qA-Cev" firstAttribute="top" secondItem="1fM-Ar-bdT" secondAttribute="top" constant="10" id="rB0-bX-Nq1"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hbo-iv-nLT">
+                            <rect key="frame" x="0.0" y="70" width="414" height="527.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Hbo-iv-nLT" secondAttribute="trailing" id="E8Z-X8-3R6"/>
+                        <constraint firstAttribute="trailing" secondItem="1fM-Ar-bdT" secondAttribute="trailing" id="K0A-co-GdP"/>
+                        <constraint firstAttribute="bottom" secondItem="Hbo-iv-nLT" secondAttribute="bottom" id="LlA-Je-jX0"/>
+                        <constraint firstItem="Hbo-iv-nLT" firstAttribute="top" secondItem="1fM-Ar-bdT" secondAttribute="bottom" id="fHH-Un-0Tx"/>
+                        <constraint firstItem="1fM-Ar-bdT" firstAttribute="top" secondItem="LzK-Fz-9Fl" secondAttribute="top" id="jgr-0F-I9h"/>
+                        <constraint firstItem="Hbo-iv-nLT" firstAttribute="leading" secondItem="LzK-Fz-9Fl" secondAttribute="leading" id="rpX-pg-iHc"/>
+                        <constraint firstItem="1fM-Ar-bdT" firstAttribute="leading" secondItem="LzK-Fz-9Fl" secondAttribute="leading" id="xJt-7m-miN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="LzK-Fz-9Fl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="67B-vU-PpU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LzK-Fz-9Fl" secondAttribute="bottom" id="SAv-cb-ma3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LzK-Fz-9Fl" secondAttribute="trailing" id="VMH-7G-fdX"/>
+                <constraint firstItem="LzK-Fz-9Fl" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1/1.5" id="vIg-pE-HN1"/>
+            </constraints>
+            <point key="canvasLocation" x="95.652173913043484" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="swipe" width="42" height="9.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
